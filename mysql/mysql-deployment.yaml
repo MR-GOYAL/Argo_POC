@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql_connect
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: mysql_connect
+  template:
+    metadata:
+      labels:
+        app: mysql_connecti
+    spec:
+      containers:
+      - image: python/mysql_connect
+        name: mysql_connect
+        ports:
+        - containerPort: 80
