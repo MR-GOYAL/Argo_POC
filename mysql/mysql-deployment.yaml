@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-        app: mysql-connecti
+        app: mysql-connect
     spec:
       containers:
       - image: python/mysql_connect
