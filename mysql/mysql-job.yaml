@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
       - name: mysql-connect
-        image: python/mysql_connect:12
+        image: python/mysql_connect:13
         command:
          - "python"
          - "connect_mysql.py"
